@@ -1,9 +1,15 @@
-<h1 >
-  Load Iframe
-</h1>
+
 
 <div class="container">
- 
+
+  <input (change)="loadCalender()" #calender type="date">
+
+  <label for="">value : </label>
+  <input #input  type="text">
+
   
-  <iframe #iframe src="https://fr.wikipedia.org/wiki/Main_Page" width="640" height="480"></iframe>
+  <app-child></app-child>
+  <app-child></app-child>
+  <button (click)="add()">Add </button>
 </div>
+
